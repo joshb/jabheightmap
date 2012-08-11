@@ -1,0 +1,25 @@
+jabheightmap 0.1 (January 27, 2003)
+
+This program features a small OpenGL world created with
+a PNG heightmap. It puts all of the quads of the map into
+an octree, which is used to cull quads that definitely aren't
+in the view frustum.
+
+It requires OpenGL (of course), X11/GLX, and libpng.
+
+To build it, run 'make' in the jabheightmap-0.1 directory
+(you may need to edit the Makefile appropriately for your
+system first); a binary called 'main' will be created, which
+you can then execute. Use the mouse to look around and use the
+arrow keys to move. Pressing the w key will toggle wireframe
+mode, s will dump a raw RGBA screenshot to a file named
+screen.raw, and escape will quit.
+
+I doubt I'll ever do anything more with this, so I'm
+releasing it in case anyone else finds the code helpful.
+The code is covered by a BSD-style license (see map.h
+or any other source file for the exact terms). The PNG
+images are public domain.
+
+Josh Beam <josh@joshbeam.com>
+http://joshbeam.com/
