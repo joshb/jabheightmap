@@ -27,7 +27,7 @@
 #include <GL/gl.h>
 #include "my_math.h"
 
-static float view[4][4];
+static float view[6][4];
 
 /* multiply 4x4 matrix */
 void
